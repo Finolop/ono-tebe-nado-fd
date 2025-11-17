@@ -1,1 +1,346 @@
 /* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items:center;
+    padding: 92px 50px 96px 50px;
+}
+
+.address {
+    gap: 1px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 135%;
+}
+
+/* логотип шапка */
+
+.header__logo {
+    display: block;
+    width: 140px;
+    height: 105px;
+}
+
+/* поле с информацией адресс шапка */
+
+.header__address_info {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    align-items: flex-start;
+    gap: 1px;
+    max-width:240px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 135%;
+}
+
+/* список меню ссылки шапка */
+
+.header__menu {
+    display: block;
+    justify-self: start;
+}
+
+.header__links_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+    list-style: circle;
+
+}
+
+.header__links_list_item {
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+/* для всех ссылок underline */
+.link { 
+    text-decoration: underline;
+    text-decoration-thickness: 0.8px;
+    text-underline-offset: 4px;
+}
+
+.header__link_active {
+   list-style: none;
+}
+
+.header__link_active .link  {
+    text-decoration:none;
+}
+
+/* cover */
+.cover {
+    position: relative;
+    z-index: -2;
+    display: grid;
+    row-gap: 106px;
+    padding: 165px 50px 50px 50px;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+/* заголовок на фото */
+.accent_span {
+    display: block;
+    line-height: 115%;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.text_center {
+    padding-left: 29px;
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+    transform: translateX(30px);
+}
+
+.cover__title {
+    display: grid;
+    gap: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 100px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.cover__description {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    align-items: center;
+    
+}
+
+.cover__subline {
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 127%;
+    text-transform: uppercase;
+    word-spacing: 18.6px;
+}
+
+.cover__subline_span {
+    letter-spacing: 1.1em;
+}
+
+.cover__button {
+    width: 256px;
+    height: 51px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    background: none;
+}
+
+/* overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    min-width: 100px;
+    min-height: 100px;
+    opacity: 0.6;
+    background: #000;
+}
+
+
+/* lot */
+.lots {
+    padding: 180px 24px 120px 24px;
+}
+
+.lots__title {
+    margin-left: 40px;
+    padding-bottom: 27px;
+    color: #000;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.lots_card_list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+}
+
+.card_link {
+    text-decoration: none;   
+}
+
+.card {
+    position: relative;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    min-width: 334px;
+    height: 100%;
+    min-height: 596px;
+    background-position: center; 
+    background-size: cover; 
+    color: #fff;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+.card_title {
+    padding: 48px 40px 0 40px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-transform: uppercase;
+}
+
+.card_text {
+    margin-top: auto;
+    padding: 0 40px 48px 40px ;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.lots__look_more_link {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 40px;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* about */
+
+.about {
+    display: grid;
+    grid-template-columns:334px 1fr;
+    gap: 26px;
+    margin-bottom: 180px;
+    padding: 0 24px 0px 24px;
+}
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    margin: 35px auto;
+    border-radius: 240px;
+    background-color: #000;
+}
+
+.about__logo_image {
+    width: 148px;
+    height: 114px;
+}
+
+.about__collumn {
+    padding-top: 133px;
+}
+
+.about__collumn_title { 
+    margin: 3px 0 100px 0;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.about__collumn_text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.about__text {
+    padding-right: 5px;
+}
+
+
+/* footer */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    padding: 0 50px 82px;
+}
+
+.footer__address_info {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    align-items: flex-start;
+    max-width: 264px;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__links_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.footer__link_active .link {
+    text-decoration: none;
+}
+
+.footer__links_list_item {
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+/* список ссылок на соцсети */
+.footer__social_list {
+    display: flex;
+    justify-self: flex-end;
+    gap: 48px;
+    list-style: none;
+}
+
+.footer__social_icon {
+    width: 48px;
+    height: 48px;
+}
